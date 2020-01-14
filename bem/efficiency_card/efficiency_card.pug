@@ -1,0 +1,7 @@
+mixin efficiency_card(props)
+    .efficiency_card_container(style={border: '6px solid' + props.color})
+        .efficiency_card_design(style={border: '6px solid' + props.color})
+        img.efficiency_card_img(src=props.card_img)
+        .efficiency_card_header=props.card_header
+        .efficiency_card_text=props.card_text
+        

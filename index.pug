@@ -1,0 +1,19 @@
+include bem/cover/cover.pug
+include bem/problems/problems.pug
+include bem/inefficient/inefficient.pug
+include bem/efficiency/efficiency.pug
+include bem/instruction/instruction.pug
+
+
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title Микоцин
+    link(rel='stylesheet' type='text/css' href='style.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap', rel='stylesheet')
+body
+    +cover()
+    +problems()
+    +inefficient()
+    +efficiency()
+    +instruction()

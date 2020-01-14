@@ -1,0 +1,55 @@
+.problems{
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        z-index: 0;
+        background: url(img/wave.png);
+        width: 100vw;
+        height: 127px;
+        background-repeat-x: repeat;
+        background-repeat-y: no-repeat;
+        transform: rotate(180deg);
+        left: -15;
+        bottom: -128px;
+        z-index: 2;
+    }
+    .problems_layout{
+        max-width: 1170px;
+        margin: 0 auto;
+        .problem_card{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .problem_notice{
+            position: relative;
+            margin-bottom:  60px;
+            padding: 35px 89px 30px;
+            border: 3px solid #f4d3bb;
+            border-radius: 10px;
+            font: 400 22px/28px 'Roboto', sans-serif;
+            text-align: center;
+            &:before{
+                content: '';
+                position: absolute;
+                background: url(img/problem_notice.svg) no-repeat center center;
+                width: 50px;
+                height: 38px;
+                left: 50%;
+                top: -19px;
+                z-index: 3;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                width: 170px;
+                height: 3px;
+                background: white;
+                top: -3px;
+                left: 45%;
+                z-index: 2;
+            }
+        }
+    }
+}

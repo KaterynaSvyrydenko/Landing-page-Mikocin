@@ -1,0 +1,38 @@
+include ../header/header.pug
+include ../problem_card/problem_card.pug
+
+mixin problems()
+
+    section.problems
+        .problems_layout
+            +header({
+                h1: 'Грибок – это опасная инфекция',
+                h2: 'которая угрожает вам и ведь с каждым днем грибок приводит к:'
+            })
+            .problem_card
+                +problem_card({
+                    number: '1',
+                    number_color: '#ec9a6a',
+                    src: 'img/problem_1.png',
+                    title: 'Сложным формам аллергии',
+                    text: 'Может появится сильная реакция на привычную пищу, одежду, средства гигиены'
+
+                })
+                +problem_card({
+                    number: '2',
+                    number_color: '#e47643',
+                    src: 'img/problem_2.png',
+                    title: 'Потере ногтя и ампутации пальца',
+                    text: 'После полного разрушения ногтя грибок распространяется на палец, что приводит к его ампутации '
+
+                })
+                +problem_card({
+                    number: '3',
+                    number_color: '#ec5b19',
+                    src: 'img/problem_3.png',
+                    title: 'Тяжелому поражению внутренних органов',
+                    text: 'Может привести к повреждениям мозга, слепоте, отказу печени, почек и сердца'
+
+                })
+            .problem_notice <span class='bold'>Статистика</span>: каждые 60 секунд врачи диагностируют опасные поражения 
+                            |внутренних органов, вызванные грибком, у 1-го пациента

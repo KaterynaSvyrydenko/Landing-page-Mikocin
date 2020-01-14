@@ -1,0 +1,7 @@
+mixin problem_card(props)
+    .card_container
+        .card_number(style={background:props.number_color})=props.number 
+        .card_header
+            img.card_img(src=props.src)
+            .card_title=props.title
+        .card_text=props.text

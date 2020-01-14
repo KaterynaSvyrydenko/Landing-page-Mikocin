@@ -1,0 +1,51 @@
+.efficiency_card_container{
+    position: relative;
+    width: calc((100% / 3) - 10px);
+    border-radius: 10px;
+    padding: 79px 23px 32px;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 108px;
+        height: 6px;
+        background: white;
+        z-index: 2;
+        top: -6px;
+        left: calc(50% - 40px);
+        z-index: 2;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        width: 121px;
+        height: 67px;
+        background: white;
+        top: -73px;
+        left: calc(50% - 47px);
+        z-index: 2;
+    }
+    .efficiency_card_design{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background: white;
+        border-radius: 50%;
+        left: calc(50% - 46px);
+        top: -65;
+        z-index: 1;
+    }
+    .efficiency_card_img{
+        position: absolute;
+        top: -48px;
+        left: calc(50% - 36px);
+        z-index: 3;
+    }
+    .efficiency_card_header{
+        margin-bottom: 15px;
+        font: 700 24px/28px 'Roboto', sans-serif;
+    }
+    .efficiency_card_text{
+        height: 155px;
+        font: 400 18px/26px 'Roboto', sans-serif;
+    }
+}

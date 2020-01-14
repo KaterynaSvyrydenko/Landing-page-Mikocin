@@ -1,0 +1,28 @@
+include ../header/header.pug
+include ../instruction_step/instruction_step.pug
+
+mixin instruction()
+
+    section.instruction
+        .instruction_layout
+            +header({
+                h1: 'Как применять Микоцин',
+            })
+            .instruction_main
+                .instruction_content
+                    img.instruction_pills(src='img/product_3.png')
+                    img.instruction_glass(src='img/instruction_glass.png')
+                .instruction_content
+                    +instruction_step({
+                        step_pic: 'img/step_1.png',
+                        step_text: 'Принимать по одной таблетке утром и вечером'
+
+                    })
+                    +instruction_step({
+                        step_pic: 'img/step_2.png',
+                        step_text: 'Запивать стаканом воды'
+                    })
+                    +instruction_step({
+                        step_pic: 'img/step_3.png',
+                        step_text: 'Курс - 30 дней'
+                    })

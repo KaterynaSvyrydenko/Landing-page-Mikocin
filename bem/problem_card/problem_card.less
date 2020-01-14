@@ -1,0 +1,48 @@
+.card_container{
+    position: relative;
+    .card_number{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        font: 400 30px/50px 'Roboto', sans-serif;
+        color: white;
+        right: 50%;
+        top: -9px;
+    }
+    .card_header{
+        display: flex;
+        align-items: center;
+        .card_img{
+            margin-right: 18px;
+        }
+        .card_title{
+            width: 140px;
+            font: 600 22px/26px 'Roboto', sans-serif;
+        }
+    }
+    .card_text{
+        position: relative;
+        width: 315px;
+        margin: 50px 0 70px;
+        font: 400 18px/28px 'Robot0', sans-serif;
+        color: #666666;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: #becbd8;
+            top: -19;
+        }
+        &:hover:before{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: #ec9a6a;
+            top: -19;
+        }
+    }
+}

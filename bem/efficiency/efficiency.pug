@@ -1,0 +1,34 @@
+include ../header/header.pug
+include ../efficiency_card/efficiency_card.pug
+
+mixin efficiency()
+    section.efficiency
+        .efficiency_layout
+            +header({
+                h1: 'Почему таблетки Микоцин от грибка так эффективны?',
+                h2: 'Другие средвства не дают полную защиту от грибковых инфекций и могут быть опасны'
+            })
+            .efficiency_card_layout
+                +efficiency_card({
+                    color: '#f64d01',
+                    card_img: 'img/effect_gel.png',
+                    card_header: 'Кремы и мази',
+                    card_text: 'Не лечат грибок, потому что не проникают в ногтевую пластину. Только временно избавляют от симптомов инфекций.' + 
+                                ' Могут вызвать сильную аллергию и раздражения на коже.'
+
+                })
+                +efficiency_card({
+                    color: '#f64d01',
+                    card_img: 'img/effect_med.png',
+                    card_header: 'Народные методы',
+                    card_text: 'Помогают только в редких случаях. Могут причинить вред коже и ногтям. Не предотвращают повторные заражения грибком.'
+                })
+                +efficiency_card({
+                    color: '#62bd1f',
+                    card_img: 'img/effect_pills.png',
+                    card_header: 'Таблетки',
+                    card_text: 'Действуют против всех видов грибков. Быстро снимают неприятные симптомы и уничтожают инфекцию изнутри вне' + 
+                                ' зависимости от области заражения грибком. Надолго защищают от повторных заражений.'
+                })
+            .efficiency_conclusion
+                .conclusion_text Зачем лечить сложнее, дольше и дороже, если есть <span class='color_date'>Микоцин?</span>

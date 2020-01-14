@@ -1,0 +1,42 @@
+.efficiency{
+    position: relative;
+    padding-bottom: 100px;
+    &:after{
+        content: '';
+        position: absolute;
+        z-index: 2;
+        background: url(img/wave.png);
+        width: 100vw;
+        height: 127px;
+        background-repeat-x: repeat;
+        background-repeat-y: no-repeat;
+        transform: rotate(180deg);
+        left: -15;
+        bottom: -27;
+    }
+    .efficiency_layout{
+        max-width: 1170px;
+        margin: 0 auto;   
+        .efficiency_card_layout{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center; 
+            margin: 85px 0 25px;
+        }
+        .efficiency_conclusion{
+            width: calc(100% - 294px);
+            margin: 0 auto;
+            background: linear-gradient(to right, #f54d01, #b77d0e, #62bd1f);
+            border-radius: 10px;
+            padding: 6px;
+            .conclusion_text{
+                background: white;
+                padding: 30px 25px 23px 29px;
+                border-radius: 6px;
+                text-align: center;
+                font: 600 27px/1 'Roboto', sans-serif;
+            }
+        }
+    } 
+}

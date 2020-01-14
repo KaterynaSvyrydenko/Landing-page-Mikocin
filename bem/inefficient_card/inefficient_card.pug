@@ -1,0 +1,10 @@
+mixin inefficient_card(props)
+    .card_layout
+        .card_header
+            h2.card_title=props.title
+            p.card_title-small=props.title_small
+            .card_img_container
+                img.card_img(src=props.card_img)
+        .card_main
+            h2.card_title.card_title-color Но
+            .card_text=props.text
