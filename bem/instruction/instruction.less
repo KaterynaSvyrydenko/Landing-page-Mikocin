@@ -4,7 +4,9 @@
     padding-top: 87px;
     .instruction_layout{
         max-width: 1170px;
+        min-width: 320px;
         margin: 0 auto;
+        padding: 0 20px;
         .instruction_main{
             display: flex;
             justify-content: space-between;
@@ -27,6 +29,62 @@
                     top: 20;
                     left: 230px;
                 }
+            }
+        }
+    }
+}
+
+@media(max-width: 1260px){
+    .instruction .instruction_layout{
+        .instruction_main{
+            width: 90%;
+            margin: 0 auto;
+            justify-content: center;
+            padding: 0 20px 10px;
+            .instruction_content{
+                .step_item{
+                    justify-content: center;
+                    .step_pic_container{
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1090px){
+    .instruction .instruction_layout{
+        .instruction_main{
+            .instruction_content-left{
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 820px){
+    .instruction .instruction_layout{
+        .header{
+            .header_h1{
+                font-size: 36px;
+                line-height: 1;
+            }
+        }
+        .instruction_main{
+            .instruction_content{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 400px){
+    .instruction .instruction_layout{
+        .header{
+            .header_h1{
+                font-size: 24px;
+                line-height: 1;
             }
         }
     }

@@ -3,6 +3,7 @@ mixin inefficient_card(props)
         .card_header
             h2.card_title=props.title
             p.card_title-small=props.title_small
+            span.italic.card_title-style=props.title_style
             .card_img_container
                 img.card_img(src=props.card_img)
         .card_main

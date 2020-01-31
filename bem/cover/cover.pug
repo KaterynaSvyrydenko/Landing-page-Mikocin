@@ -22,52 +22,54 @@ mixin cover()
                                 img(src='img/bullet_3.png')
                             p.item_text +13000 довольных клиентов за 2018 год
                 .cover_main
-                    .info_product
-                        .product_img
-                            img.product_1(src="img/product_1.png", alt="Микоцин Актив" width='336px')
-                            img.product_2(src="img/product_2.png", alt="Микоцин таблетки" width='411px')
-                            img.product_3(src="img/product_3.png", alt="Микоцин гель" width='365px')
-                            img.product_tablet(src="img/product_tablet.png", alt="Микоцин таблетки")
-                            img.product_grass(src="img/grass.png", alt="Трава")
-                            .product_price.product_price-color 299₽
-                            .product_price 299₽    
-                            .circle_decor 
-                                .decor_circle
-                                img.decor_img(src='img/circle_background.png' width='571px' height='571px')
-                            img.feet_picture(src='img/feet.png')    
-                        .product_info
-                            h1.info_h1 Комплексное избавление от грибка —<br> <span class='info_h1-small'><span class='line_red-big'>изнутри</span> и <span class='line_green-big'>снаружи</span></span>
-                            ul.info_list
-                                li.list_item
-                                    .item_icon 2в1
-                                    p.item_text Комплекс Микоцин <span class='bold'>устраняет зуд, запах,</span> и возвращает эстетичный вид ногтям
-                                li.list_item
-                                    .item_icon 1
-                                    p.item_text <span class='bold line_red-small'>Таблетки</span> Микоцин <span class='bold'>уничтожают все виды грибка</span> на ногтях и коже
-                                li.list_item
-                                    .item_icon 2
-                                    p.item_text <span class='bold line_green-small'>Гель</span> Микоцин <span>восстанавливает кожу</span> и создает на ней <span>защитный барьер</span>
-                        .product_form
-                            .form_container
-                                .form_delivery
-                                    img(src='img/delivery_icon.png')
-                                    p.delivery_text Бесплатно
-                                h2.form_title Успейте заказать со скидкой<br> <span class='color_date'>до 11.01.2020</span>
-                                .form_price
-                                    .price_old
-                                        .price_name-light старая цена
-                                        .price_text 918 <span class='price_icon'>₽</span>
-                                    .price_new
-                                        .price_name новая цена
-                                        .price_text-bold 459 ₽
-                                .form
-                                    .form_name_layout
-                                        input.form_name(type="text" placeholder='Имя')
-                                    .form_tel_layout
-                                        input.form_tel(type="text" placeholder='Телефон')
-                                    button(type="submit").form_button Заказать<br> <span class='button_text-small'>со скидкой</span>
-                                .form_notice Осталось <span class='color_text'>10</span> упаковок со скидкой 
-                                .form_protect 
-                                    img.protect_icon(src='img/protect_icon.png') 
-                                    .protect_text Ваши данные защищены
+                    .product_img
+                        img.product_1(src="img/product_1.png", alt="Микоцин Актив" width='336px')
+                        img.product_2(src="img/product_2.png", alt="Микоцин таблетки" width='411px')
+                        img.product_3(src="img/product_3.png", alt="Микоцин гель" width='365px')
+                        img.product_tablet(src="img/product_tablet.png", alt="Микоцин таблетки")
+                        img.product_grass(src="img/grass.png", alt="Трава")
+                        .product_price.product_price-color 299₽
+                        .product_price 299₽    
+                        .circle_decor 
+                            .decor_container
+                                <svg class='cover_decor_circle' viewBox="0 0 160 170">
+                                    <circle cx="78" cy="78" r="78"></circle>
+                                </svg>
+                            img.decor_img(src='img/circle_background.png' width='571px' height='571px')
+                        img.feet_picture(src='img/feet.png')    
+                    .product_info
+                        h1.info_h1 Комплексное избавление от грибка —<br> <span class='info_h1-small'><span class='line_red-big'>изнутри</span> и <span class='line_green-big'>снаружи</span></span>
+                        ul.info_list
+                            li.list_item
+                                .item_icon 2в1
+                                p.item_text Комплекс Микоцин <span class='bold'>устраняет зуд, запах,</span> и возвращает эстетичный вид ногтям
+                            li.list_item
+                                .item_icon.item_icon-decor 1
+                                p.item_text <span class='bold line_red-small'>Таблетки</span> Микоцин <span class='bold'>уничтожают все виды грибка</span> на ногтях и коже
+                            li.list_item
+                                .item_icon 2
+                                p.item_text <span class='bold line_green-small'>Гель</span> Микоцин <span>восстанавливает кожу</span> и создает на ней <span>защитный барьер</span>
+                    .product_form
+                        .form_container
+                            .form_delivery
+                                img(src='img/delivery_icon.png')
+                                p.delivery_text Бесплатно
+                            h2.form_title Успейте заказать со скидкой<br> <span class='color_date'>до 11.01.2020</span>
+                            .form_price
+                                .price_old
+                                    .price_name-light старая цена
+                                    .price_text 918 <span class='price_icon'>₽</span>
+                                .price_new
+                                    .price_name новая цена
+                                    .price_text-bold 459 ₽
+                            .form
+                                .form_name_layout
+                                    input.form_name(type="text" placeholder='Имя')
+                                .form_tel_layout
+                                    input.form_tel(type="tel" autocomplete="on" placeholder='Телефон' required)
+                                button(type="submit").form_button Заказать<br> <span class='button_text-small'>со скидкой</span>
+                            .form_notice Осталось <span class='color_text'>10</span> упаковок со скидкой 
+                            .form_protect 
+                                img.protect_icon(src='img/protect_icon.png') 
+                                .protect_text Ваши данные защищены
 
